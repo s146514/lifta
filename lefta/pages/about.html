@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – Lefta</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <!-- Internal CSS -->
+  <style>
+    .team-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s;
+    }
+    .team-card:hover { transform: translateY(-4px); }
+    .team-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      font-size: 1.8rem;
+      font-family: var(--font-heading);
+      font-weight: bold;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .team-card h3 { margin-bottom: 0.2rem; }
+    .team-card .role { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+    .team-card .student-id { color: var(--text-light); font-size: 0.82rem; }
+    .timeline { position: relative; padding-left: 1.5rem; }
+    .timeline::before {
+      content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+      width: 2px; background: var(--border);
+    }
+    .timeline-item { position: relative; margin-bottom: 1.5rem; }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -1.9rem; top: 0.3rem;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--primary); border: 2px solid white;
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+    .timeline-item h4 { color: var(--primary); margin-bottom: 0.2rem; }
+    .timeline-item p { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.jpg" alt="Lefta Logo" class="logo-img"/>
+        <span class="logo-text">Fin<span>Track</span></span>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">&#9776;</button>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="budget.html">Budget</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="savings.html">Savings</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-hero" style="display:flex;align-items:center;gap:2rem;">
+      <img src="../images/logo.jpg" alt="Lefta" class="logo-graphic" style="flex-shrink:0;"/>
+      <div>
+        <h1>👥 About Us</h1>
+        <p>Meet the team behind Lefta — a group of passionate computer science students at Sultan Qaboos University.</p>
+      </div>
+    </div>
+
+    <!-- Project Overview -->
+    <div class="card">
+      <h2>About Lefta</h2>
+      <div class="grid-2">
+        <div>
+          <p>Lefta is a personal finance management web application designed and developed as part of the COMP3700 (Introduction to Web Computing) course project at Sultan Qaboos University during Spring 2026.</p>
+          <p>Our mission is to make personal finance management simple, accessible, and effective for everyone — especially students and young professionals who are beginning their financial journey.</p>
+          <p>The platform covers all essential aspects of personal finance including budgeting, expense tracking, savings goal management, and loan calculations.</p>
+          <h3>Our Mission</h3>
+          <p>To empower individuals to take control of their financial lives through an intuitive and comprehensive web-based tool that is completely free to use.</p>
+        </div>
+        <div>
+          <h3>Project Highlights</h3>
+          <ul class="check-list styled">
+            <li>Built using pure HTML and CSS — no frameworks</li>
+            <li>Fully responsive across all screen sizes</li>
+            <li>8 complete web pages with full functionality</li>
+            <li>Deployed on GitHub Pages and a free hosting platform</li>
+            <li>Collaborative development via GitHub</li>
+            <li>Compliant with COMP3700 project requirements</li>
+          </ul>
+          <div class="alert alert-info" style="margin-top:1rem;">
+            <strong>📧 Contact the Team:</strong><br/>
+            Email us at: <a href="mailto:Lefta@squ.edu.om" style="color:var(--primary);font-weight:bold;">Lefta@squ.edu.om</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="card">
+      <h2>Meet the Team</h2>
+      <div class="grid-2" style="margin-bottom:0;">
+        <div class="team-card">
+          <div class="team-avatar">AA</div>
+          <h3>Ahmed Al-Balushi</h3>
+          <p class="role">Team Lead &amp; Frontend Developer</p>
+          <p class="student-id">Student ID: 120045678</p>
+          <p style="margin-top:0.8rem;font-size:0.9rem;">Responsible for the overall project architecture, index.html, and CSS design system. Led team coordination and GitHub repository management.</p>
+          <p style="margin-top:0.5rem;"><a href="mailto:ahmed.balushi@squ.edu.om" <!-- Email Link Required -->>📧 ahmed.balushi@squ.edu.om</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">SA</div>
+          <h3>Sara Al-Harthi</h3>
+          <p class="role">UI/UX Designer &amp; Content Writer</p>
+          <p class="student-id">Student ID: 120052341</p>
+          <p style="margin-top:0.8rem;font-size:0.9rem;">Designed the visual interface and color scheme. Developed the Budget and Tips pages. Wrote all financial content and tip articles.</p>
+          <p style="margin-top:0.5rem;"><a href="mailto:sara.harthi@squ.edu.om">📧 sara.harthi@squ.edu.om</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">MR</div>
+          <h3>Mohammed Al-Riyami</h3>
+          <p class="role">Forms Developer &amp; Data Analyst</p>
+          <p class="student-id">Student ID: 120061892</p>
+          <p style="margin-top:0.8rem;font-size:0.9rem;">Built all web forms and data tables. Developed the Expense Tracker and Savings Goals pages. Ensured form validation and accessibility.</p>
+          <p style="margin-top:0.5rem;"><a href="mailto:m.riyami@squ.edu.om">📧 m.riyami@squ.edu.om</a></p>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">FB</div>
+          <h3>Fatma Al-Busaidi</h3>
+          <p class="role">Calculator Dev &amp; Documentation</p>
+          <p class="student-id">Student ID: 120078234</p>
+          <p style="margin-top:0.8rem;font-size:0.9rem;">Developed the Loan Calculator page and About/Contact pages. Prepared the project report, screenshots, and contribution table.</p>
+          <p style="margin-top:0.5rem;"><a href="mailto:f.busaidi@squ.edu.om">📧 f.busaidi@squ.edu.om</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contributions Table -->
+    <div class="card">
+      <h2>Team Contributions</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Team Member</th>
+              <th colspan="4" style="text-align:center">Pages Developed</th>
+              <th rowspan="2">Other Tasks</th>
+              <th rowspan="2">Contribution %</th>
+            </tr>
+            <tr>
+              <th>HTML</th>
+              <th>CSS</th>
+              <th>Forms</th>
+              <th>Tables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ahmed Al-Balushi</strong></td>
+              <td>index.html</td>
+              <td>style.css (main)</td>
+              <td>—</td>
+              <td>Feature comparison table</td>
+              <td>GitHub setup, repo management</td>
+              <td class="td-amount">25%</td>
+            </tr>
+            <tr>
+              <td><strong>Sara Al-Harthi</strong></td>
+              <td>budget.html, tips.html</td>
+              <td>Budget internal CSS</td>
+              <td>Budget form</td>
+              <td>Budget breakdown table</td>
+              <td>Content writing, images</td>
+              <td class="td-amount">25%</td>
+            </tr>
+            <tr>
+              <td><strong>Mohammed Al-Riyami</strong></td>
+              <td>expenses.html, savings.html</td>
+              <td>Savings internal CSS</td>
+              <td>Expense &amp; Savings forms</td>
+              <td>Expense log, category table</td>
+              <td>Form validation, accessibility</td>
+              <td class="td-amount">25%</td>
+            </tr>
+            <tr>
+              <td><strong>Fatma Al-Busaidi</strong></td>
+              <td>calculator.html, about.html, contact.html</td>
+              <td>Calculator internal CSS</td>
+              <td>Calculator form</td>
+              <td>Amortization table, contributions table</td>
+              <td>Report writing, screenshots</td>
+              <td class="td-amount">25%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Project Timeline -->
+    <div class="card">
+      <h2>Project Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Week 1 – Planning (Feb 2026)</h4>
+          <p>Defined project scope, selected finance tracker topic, created GitHub repository, designed sitemap, and divided tasks among team members.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Week 2 – Design (Feb 2026)</h4>
+          <p>Finalized color scheme and typography. Built the external CSS file with all CSS variables, selectors, and responsive layout rules.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Week 3 – Development (Mar 2026)</h4>
+          <p>Each team member developed their assigned pages. Regular commits to GitHub. Peer review of all pages for consistency.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Week 4 – Testing &amp; Deployment (Mar 2026)</h4>
+          <p>Tested on multiple devices and browsers. Published on GitHub Pages and a free hosting platform. Prepared final report.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Submission – Mar 19, 2026</h4>
+          <p>Submitted compressed folder and PDF report to Moodle before the deadline.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+          <img src="../images/logo.jpg" alt="Lefta" class="logo-graphic-sm"/>
+          <span class="logo-text">Fin<span style="color:var(--accent)">Track</span></span>
+        </div>
+        <p style="font-size:0.88rem;margin-top:0.3rem;">Your personal finance companion.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="budget.html">Budget</a></li>
+          <li><a href="expenses.html">Expenses</a></li>
+          <li><a href="savings.html">Savings</a></li>
+          <li><a href="calculator.html">Calculator</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Info</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p style="margin-top:1rem;font-size:0.85rem;">📧 <a href="mailto:Lefta@squ.edu.om" style="color:var(--accent);">Lefta@squ.edu.om</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Lefta – COMP3700 Project, Sultan Qaboos University.</p>
+    </div>
+  </footer>
+
+  <script>function toggleNav(){document.getElementById('nav-menu').classList.toggle('open');}</script>
+</body>
+</html>
